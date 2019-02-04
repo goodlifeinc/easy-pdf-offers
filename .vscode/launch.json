@@ -21,6 +21,23 @@
             "request": "launch",
             "name": "Launch Merger",
             "program": "${workspaceFolder}\\merge.js"
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Exporter",
+            "program": "${workspaceFolder}\\exporter.js"
+        },
+        {
+            "name": "Debug Main Process",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+            "windows": {
+              "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
+            },
+            "args" : ["exporter.js"]
+          }
     ]
 }

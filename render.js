@@ -2,11 +2,18 @@ const fs = require('fs');
 const path = require('path');
 const Mustache = require('mustache');
 
-const renderMustache = (template, model, pageNumber = 1) => {
+const Page = require('./page');
+
+const renderMustache = async (template, model, pageNumber = 1) => {
     model.pageNum = pageNumber;
     const output = Mustache.render(template, model);
 
     fs.writeFileSync(path.join(__dirname, '/template/rendered', `mustacheOutput.${pageNumber}.html`), output);
+
+    const page = new Page(output);
+    const pdf = await page.pdf();
+
+    fs.writeFileSync(path.join(__dirname, '/template/pdf', `exporter${pageNumber}.pdf`), pdf);
 
     console.log('Success Mustache');
 }
