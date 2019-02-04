@@ -1,0 +1,153 @@
+{
+    "company": {
+        "name": "Кристал ООД",
+        "phone": "0887 36 15 05",
+        "website": "www.KRISTALTOYS.com",
+        "logo": "https://via.placeholder.com/400x180"
+    },
+    "title": "Акция Св. Валентин 2019",
+    "date_from": "07.01.2019",
+    "date_to": "14.02.2019",
+    "offers": [
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.01)",
+            "price": "6.39",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.03)",
+            "price": "9.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.05)",
+            "price": "32.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.06)",
+            "price": "12.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.01)",
+            "price": "6.39",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.03)",
+            "price": "9.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.05)",
+            "price": "32.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.06)",
+            "price": "12.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.01)",
+            "price": "6.39",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.03)",
+            "price": "9.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.05)",
+            "price": "32.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.06)",
+            "price": "12.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.01)",
+            "price": "6.39",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.03)",
+            "price": "9.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.05)",
+            "price": "32.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.06)",
+            "price": "12.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.01)",
+            "price": "6.39",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.03)",
+            "price": "9.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.05)",
+            "price": "32.90",
+            "total": ""
+        },
+        {
+            "picture": "https://via.placeholder.com/200x180",
+            "description": "item description",
+            "quantity": "1 (=0.06)",
+            "price": "12.90",
+            "total": ""
+        }
+    ]
+}

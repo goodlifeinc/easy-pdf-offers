@@ -1,0 +1,17 @@
+{
+  "name": "easy-pdf-offers",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "easy-pdf-merge": "^0.2.0",
+    "electron-pdf": "^4.0.1",
+    "mustache": "^3.0.1"
+  }
+}

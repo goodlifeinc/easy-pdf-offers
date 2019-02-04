@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <style>
+    .label {
+        display: inline-block;
+        min-width: 120px;
+    }
+    form > div {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <p>
+                <span class="label">Име на фирма: </span><input type="text" name="name" />
+            </p>
+            <p>
+                <span class="label">Телефон: </span><input type="text" name="phone" />
+            </p>
+            <p>
+                <span class="label">Website: </span><input type="text" name="website" />
+            </p>
+            <p>
+                <span class="label">Logo URL: </span><input type="text" name="logo" />
+            </p>
+        </div>
+        <div>
+            <p>
+                Качи .zip файл с картинките
+            </p>
+            <p>
+                <input type="file" name="pictures" />
+            </p>
+        </div>
+        <div>
+            <p>
+                Качи csv файл с продуктите с формат: 
+            </p>
+            <p>
+                picture;description;quantity;price;total
+            </p>
+            <p>
+                <input type="file" name="products" />
+            </p>
+        </div>
+    </form>
+</body>
+</html>
