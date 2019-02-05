@@ -1,9 +1,5 @@
-let host = 'localhost';
-let port = 8081;
-
-if (process.env.ENVIRONMENT === 'heroku') {
-    port = 80;
-}
+let host = process.env.HOST || 'localhost';
+let port = process.env.PORT || 8081;
 
 module.exports = {
     host,
