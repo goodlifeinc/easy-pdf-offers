@@ -1,17 +1,17 @@
-const Puppeteer = require( 'puppeteer' )
+const Puppeteer = require('puppeteer');
 
 class Page {
-    constructor( html ) {
-        this.html = html;
-    }
+  constructor(html) {
+    this.html = html;
+  }
 
-    async pdf() {
-        const browser = await Puppeteer.launch();
-        const page = await browser.newPage();
-        await page.setContent( this.html );
+  async pdf() {
+    const browser = await Puppeteer.launch();
+    const page = await browser.newPage();
+    await page.setContent(this.html);
 
-        return page.pdf();
-    }
+    return page.pdf();
+  }
 }
 
 module.exports = Page;
