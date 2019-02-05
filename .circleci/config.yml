@@ -38,7 +38,7 @@ jobs:
   deploy:
     machine:
         enabled: true
-    working_directory: ~/circleci-demo-workflows
+    working_directory: ~/repo
     environment:
       HEROKU_APP: "easy-pdf-offers"
     steps:
