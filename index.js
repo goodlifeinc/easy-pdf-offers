@@ -1,4 +1,5 @@
 const App = require('./src');
+const config = require('./config');
 
-const app = new App('easy-pdf-offers.herokuapp.com', 80);
+const app = new App(config.host, config.port);
 app.start();

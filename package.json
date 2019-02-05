@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "export ENVIRONMENT=heroku && node index.js",
     "eslint": "./node_modules/.bin/eslint .",
     "eslint-fix": "./node_modules/.bin/eslint --fix .",
     "test": "echo \"Error: no test specified\" && exit 1"
