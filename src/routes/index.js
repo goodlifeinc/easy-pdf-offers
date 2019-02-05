@@ -4,7 +4,7 @@ const routes = [
   {
     method: 'GET',
     path: '/hello',
-    handler(request, h) {
+    handler() {
       return 'hello world';
     },
   },

@@ -3,7 +3,7 @@ const fs = require('fs');
 const fse = require('fs-extra');
 
 const Merger = require('../../services/merger');
-const Renderer = require('../../services/Renderer');
+const Renderer = require('../../services/renderer');
 
 const routes = [{
   method: 'GET',
@@ -27,7 +27,7 @@ const routes = [{
     const mergerInstance = new Merger(fileNames, destinationFilePath);
     let output = 'error';
     try {
-      output = mergerInstance.merge();
+      output = await mergerInstance.merge();
     } catch (e) {
       console.log('error');
     }

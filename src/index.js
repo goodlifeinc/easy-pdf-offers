@@ -16,9 +16,11 @@ class App {
     return server;
   }
 
+  /* eslint-disable class-methods-use-this */
   registerRoutes(server) {
     return defineRoutes(server);
   }
+  /* eslint-enable class-methods-use-this */
 
   async start() {
     let server = this.createServer();
