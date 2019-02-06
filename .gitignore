@@ -2,3 +2,4 @@
 .sonarlint
 .scannerwork
 /src/output
+logs

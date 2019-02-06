@@ -25,6 +25,7 @@
     "inert": "^5.1.2",
     "mustache": "^3.0.1",
     "puppeteer": "^1.12.1",
+    "rotating-file-stream": "^1.4.0",
     "vision": "^5.4.4"
   },
   "devDependencies": {

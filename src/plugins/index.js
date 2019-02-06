@@ -9,7 +9,32 @@ module.exports = async (server) => {
       interval: 1000,
     },
     reporters: {
-      myConsoleReporter: [
+      fileReporter: [
+        {
+          module: 'good-squeeze',
+          name: 'Squeeze',
+          args: [{ ops: '*' }],
+        },
+        {
+          module: 'good-squeeze',
+          name: 'SafeJson',
+          args: [
+            null,
+            { separator: ',' },
+          ],
+        }, {
+          module: 'rotating-file-stream',
+          args: [
+            'ops_log',
+            {
+              size: '10MB',
+              path: './logs',
+            },
+          ],
+        },
+      ],
+
+      consoleReporter: [
         {
           module: 'good-squeeze',
           name: 'Squeeze',
