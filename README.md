@@ -1,5 +1,6 @@
 # Easy pdf offers
 
+[![CircleCI](https://circleci.com/gh/goodlifeinc/easy-pdf-offers/tree/master.svg?style=svg)](https://circleci.com/gh/goodlifeinc/easy-pdf-offers/tree/master)
 ![](https://img.shields.io/circleci/project/github/goodlifeinc/easy-pdf-offers/master.svg?style=flat)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=goodlifeinc_easy-pdf-offers&metric=alert_status)](https://sonarcloud.io/dashboard?id=goodlifeinc_easy-pdf-offers)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=goodlifeinc_easy-pdf-offers&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=goodlifeinc_easy-pdf-offers)
