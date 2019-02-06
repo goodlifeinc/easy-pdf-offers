@@ -36,8 +36,7 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - run: wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.1.0.1141-linux.zip
-      - run: unzip sonar-scanner-cli-3.1.0.1141-linux
+      - run: wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.3.0.1492-linux.zip
       - run: ln -s /sonar-scanner-3.1.0.1141-linux/bin/sonar-scanner /usr/bin/sonar-scanner
       - run: chmod +x /usr/bin/sonar-scanner
       - run: | 
@@ -66,9 +65,10 @@ workflows:
     jobs:
       - build
       - analyze
-      - deploy:
           requires:
             - build
+      - deploy:
+          requires:
             - analyze
           filters:
             branches:
