@@ -36,9 +36,7 @@ class Renderer {
     const firstPageModel = Object.assign({}, modelCopy);
     const pageModels = [];
 
-    if (modelCopy.offers.length <= 3) {
-      firstPageModel.offers = modelCopy.offers.splice(0, 3);
-    }
+    firstPageModel.offers = modelCopy.offers.splice(0, 3);
 
     while (modelCopy.offers.length !== 0) {
       const pageModel = Object.assign({}, modelCopy);
