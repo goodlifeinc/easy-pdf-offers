@@ -36,7 +36,7 @@ class Renderer {
     const firstPageModel = Object.assign({}, modelCopy);
     const pageModels = [];
 
-    if (modelCopy.offers.length >= 3) {
+    if (modelCopy.offers.length <= 3) {
       firstPageModel.offers = modelCopy.offers.splice(0, 3);
     }
 
@@ -53,9 +53,12 @@ class Renderer {
       this.templatePageFirst, firstPageModel, timestamp,
     );
 
-    const pageFilepaths = await Promise.all(
-      pageModels.map(async (pm, i) => renderMustache(this.templatePage, pm, timestamp, i + 2)),
-    );
+    let pageFilepaths = [];
+    if (pageModels.length > 0) {
+      pageFilepaths = await Promise.all(
+        pageModels.map(async (pm, i) => renderMustache(this.templatePage, pm, timestamp, i + 2)),
+      );
+    }
 
     return [firstPageFilepath].concat(pageFilepaths);
   }
