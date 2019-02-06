@@ -10,7 +10,10 @@ class Page {
     const page = await browser.newPage();
     await page.setContent(this.html);
 
-    return page.pdf();
+    const pdf = await page.pdf();
+
+    await browser.close();
+    return pdf;
   }
 }
 
