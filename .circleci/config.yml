@@ -64,7 +64,7 @@ workflows:
   build-and-deploy:
     jobs:
       - build
-      - analyze
+      - analyze:
           requires:
             - build
       - deploy:
