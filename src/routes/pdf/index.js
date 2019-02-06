@@ -8,6 +8,11 @@ const Renderer = require('../../services/renderer');
 const routes = [{
   method: 'GET',
   path: '/pdf',
+  options: {
+    description: 'Get pdf offer',
+    notes: 'Return pdf rendered offer.',
+    tags: ['api', 'pdf'],
+  },
   async handler(request, h) {
     try {
       const firstPageTemplate = fs.readFileSync(path.join(__dirname, '../../services/renderer/templates/default/index.mustache.html'), 'utf8');

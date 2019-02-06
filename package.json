@@ -21,8 +21,11 @@
     "good-console": "^7.1.0",
     "good-squeeze": "^5.1.0",
     "hapi": "^18.1.0",
+    "hapi-swagger": "^9.3.0",
+    "inert": "^5.1.2",
     "mustache": "^3.0.1",
-    "puppeteer": "^1.12.1"
+    "puppeteer": "^1.12.1",
+    "vision": "^5.4.4"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
