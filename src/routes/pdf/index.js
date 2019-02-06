@@ -31,7 +31,7 @@ const routes = [{
         try {
           output = await mergerInstance.merge();
         } catch (e) {
-          console.log('error');
+          console.log('error', e);
         }
       }
       const file = fs.readFileSync(output);
