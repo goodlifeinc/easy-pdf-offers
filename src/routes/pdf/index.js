@@ -24,13 +24,15 @@ const routes = [{
       const rendererInstance = new Renderer(firstPageTemplate, pageTemplate);
 
       const fileNames = await rendererInstance.render(model, unique);
-
-      const mergerInstance = new Merger(fileNames, destinationFilePath);
-      let output = 'error';
-      try {
-        output = await mergerInstance.merge();
-      } catch (e) {
-        console.log('error');
+      let output = fileNames[0];
+      
+      if (fileNames.length > 1) {
+        const mergerInstance = new Merger(fileNames, destinationFilePath);
+        try {
+          output = await mergerInstance.merge();
+        } catch (e) {
+          console.log('error');
+        }
       }
       const file = fs.readFileSync(output);
 

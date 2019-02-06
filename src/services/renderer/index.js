@@ -7,7 +7,7 @@ const Page = require('../page');
 async function renderMustache(template, model, timestamp, pageNumber = 1) {
   const modelCopy = Object.assign({}, model);
   modelCopy.pageNum = pageNumber;
-  const output = Mustache.render(template, model);
+  const output = Mustache.render(template, modelCopy);
 
   const page = new Page(output);
   const pdf = await page.pdf();
@@ -36,8 +36,8 @@ class Renderer {
     const firstPageModel = Object.assign({}, modelCopy);
     const pageModels = [];
 
-    if (modelCopy.offers.length > 3) {
-      firstPageModel.offers = model.offers.splice(0, 3);
+    if (modelCopy.offers.length >= 3) {
+      firstPageModel.offers = modelCopy.offers.splice(0, 3);
     }
 
     while (modelCopy.offers.length !== 0) {
