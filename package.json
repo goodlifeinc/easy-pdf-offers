@@ -14,8 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "boom": "^7.3.0",
     "easy-pdf-merge": "^0.2.0",
     "fs-extra": "^7.0.1",
+    "good": "^8.1.2",
+    "good-console": "^7.1.0",
+    "good-squeeze": "^5.1.0",
     "hapi": "^18.1.0",
     "mustache": "^3.0.1",
     "puppeteer": "^1.12.1"

@@ -1,6 +1,7 @@
 const Hapi = require('hapi');
 
 const defineRoutes = require('./routes');
+const registerPlugins = require('./plugins');
 
 class App {
   constructor(host, port) {
@@ -20,18 +21,24 @@ class App {
   registerRoutes(server) {
     return defineRoutes(server);
   }
+
+  registerPlugins(server) {
+    return registerPlugins(server);
+  }
   /* eslint-enable class-methods-use-this */
 
   async start() {
     let server = this.createServer();
     server = this.registerRoutes(server);
+    server = await this.registerPlugins(server);
     try {
+      server.log('info', 'Server Starting...');
       await server.start();
     } catch (err) {
-      console.log(err);
+      server.log('error', err);
       process.exit(1);
     }
-    console.log('Server running at:', server.info.uri);
+    server.log('info', `Server running at: ${server.info.uri}`);
   }
 }
 

@@ -25,13 +25,13 @@ const routes = [{
 
       const fileNames = await rendererInstance.render(model, unique);
       let output = fileNames[0];
-      
+
       if (fileNames.length > 1) {
         const mergerInstance = new Merger(fileNames, destinationFilePath);
         try {
           output = await mergerInstance.merge();
         } catch (e) {
-          console.log('error', e);
+          request.log('error', e);
         }
       }
       const file = fs.readFileSync(output);
@@ -40,10 +40,10 @@ const routes = [{
 
       return h.response(file).header('Content-Disposition', `attachment; filename=${filename}`);
     } catch (e) {
-      console.log(e);
+      request.log('error', e);
       return e;
     }
-  }
+  },
 }];
 
 module.exports = routes;
