@@ -39,7 +39,7 @@ jobs:
       - run: wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.3.0.1492-linux.zip
       - run: unzip sonar-scanner-cli-3.3.0.1492-linux
       - run: | 
-            sonar-scanner-cli-3.3.0.1492-linux/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner -D"sonar.projectKey=$SONAR_PROJECT_KEY" \
+            ./sonar-scanner-cli-3.3.0.1492-linux/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner -D"sonar.projectKey=$SONAR_PROJECT_KEY" \
               -D"sonar.organization=$SONAR_ORGANIZATION" \
               -D"sonar.sources=." \
               -D"sonar.exclusions=node_modules/**" \
