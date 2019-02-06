@@ -6,7 +6,7 @@ class Page {
   }
 
   async pdf() {
-    const browser = await Puppeteer.launch();
+    const browser = await Puppeteer.launch({args: ['--no-sandbox'], headless: true});
     const page = await browser.newPage();
     await page.setContent(this.html);
 
