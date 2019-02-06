@@ -34,6 +34,31 @@ module.exports = async (server) => {
         },
       ],
 
+      errorsFileReporter: [
+        {
+          module: 'good-squeeze',
+          name: 'Squeeze',
+          args: [{ error: '*' }],
+        },
+        {
+          module: 'good-squeeze',
+          name: 'SafeJson',
+          args: [
+            null,
+            { separator: ',' },
+          ],
+        }, {
+          module: 'rotating-file-stream',
+          args: [
+            'ops_error_log',
+            {
+              size: '10MB',
+              path: './logs',
+            },
+          ],
+        },
+      ],
+
       consoleReporter: [
         {
           module: 'good-squeeze',
